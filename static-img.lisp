@@ -3,10 +3,8 @@
 ;;;; author: Jake Johnson
 ;;;; e-mail: springheeled.jake@gmail.com
 
-;; Make sure lisp can see lispbuilder-sdl
-;; (NOTE: this code only likes to be ran once
-;;  per repl session)
-(asdf:operate 'asdf:load-op :lispbuilder-sdl)
+;; Don't forget to (asdf:operate 'asdf:load-op :lispbuilder-sdl)
+;; before trying to load this into the repl.
 
 ;; initialize SDL
 (sdl:init-sdl :video t)
