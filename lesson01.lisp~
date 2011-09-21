@@ -1,0 +1,23 @@
+(ASDF:OPERATE 'ASDF:LOAD-OP :LISPBUILDER-SDL)
+
+(SDl:INIT-SDL :VIDEO T)
+;create screen surface
+(sdl:window 800 600 :title-caption "Lazy Foo' Lesson 01")
+;create image surface
+(sdl:draw-surface (sdl:load-image "img.bmp"))
+;apply img to screen
+(sdl:update-display)
+(sdl:with-events ()
+      (:quit-event () t)
+      (:video-expose-event (sdl:update-display)))
+
+
+;
+;(sdl:with-init ()
+ ;(sdl:window 800 600)
+;(sdl:draw-surface 
+ ;(sdl:load-image "img.bmp"))
+  ;(sdl:update-display)
+  ;(sdl:with-events ()
+ ;      (:quit-event () t)
+   ;(:video-expose-event () (sdl:update-display))))

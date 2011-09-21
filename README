@@ -1,1 +1,1 @@
-I plan to port the Lazy Foo' SDL tutorials (http://lazyfoo.net/SDL_tutorials/) to Lisp as a learning exercise. These may (will likely) be poorly written. Feel free to point issues and poorly written code out to me. 
+A series of heavily commented lispbuilder-sdl examples.
